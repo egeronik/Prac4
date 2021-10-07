@@ -17,7 +17,8 @@ public class ScoreTable extends JFrame {
     int scoreB = 0;
 
     public ScoreTable(){
-        super("Score Table");
+        super("Score Table" );
+        setSize(100,200);
         setLayout(new BorderLayout());
         add(bottom,BorderLayout.SOUTH);
         bottom.add(Millan);
@@ -56,5 +57,6 @@ public class ScoreTable extends JFrame {
                 Result.setText("Result " + scoreA + "X" + scoreB);
             }
         });
+        setBounds(50,50,400,500);
     }
 }
